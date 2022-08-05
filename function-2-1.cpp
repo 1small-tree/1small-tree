@@ -1,15 +1,8 @@
-void print_as_binary(std::string decimal_number)
-{
-int num = stoi(decimal_number);
-if(num < 1)
-{
-cout << "number should not less than 1 " << endl;
-exit(0);
+#include <bits/stdc++.h>
+using namespace std;
+void print as binary(std::string desimal number){
+if(decimal number.length()>=1 && decimal numberlength()<=9){
+int formatted dec=stoi(str:decimalnumber);
+string binary =bitset<10>(val:formatted dec).to string(); cout<< stoi( str: binary)<<endl;
 }
-for(int i=31; i>=0 ; i--)
-{
-cout << ((num >> i) & 1) ;
-}
-cout << endl;
-
 }
