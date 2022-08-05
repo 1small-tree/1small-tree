@@ -1,46 +1,15 @@
-#include <iostream>
-#include<iomanip>
-#include<fstream>
-#include <stdint.h>
-#include <string>
-#include <cmath>
+#include <bits/stdc++.h>
+
 using namespace std;
 
-int identity(int a[10][10])
-{
-    int flag = 0, i, j;
-    for (i = 0; i < 10; i++)
-        for (j = 0; j < 10; j++)
-        {
-            if ((a[i][j] != 1) && (a[j][i] != 0))
-            {
-                flag = 1;
-                break;
-            }
-        }
-    if (flag == 0)
-        return 1;
-    else
-        return 0;
-}
-int main()
-{
-    int i, j, a[10][10], identityFlag;
-    
-    cout << "Enter array elements : ";
-    for (i = 0; i < 10; i++)
-        for (j = 0; j < 10; j++)
-            cin >> a[i][j];
+void print summed matrices(int array1[3][3]，intarray2[3][3]){
 
-    identityFlag = identity(a);
-    
-    if (identityFlag == 1)
-    {
-        cout << "Identity Matrix";
-    }
-    else
-    {
-        cout << "Not an Identity Matrix";
-    }
-    return 0;
+int **result=new(nothrow)int*[3];
+
+for (inti=0:i<3:i++) {
+result[i]=new(nothrow)int[3];
+
+for (int i =0; i<3;i++) {
+for (int j=0; j<3;j++) {
+result[i][j]=array1[i][j]+array2[i][j]
 }
