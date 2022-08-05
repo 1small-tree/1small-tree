@@ -1,28 +1,29 @@
-//function to count the number occurances
+#include <iostream>
 
+using namespace std;
 void count_digits(int array[4][4])
 
 {
-  
-int *ptr, i=42, k=477, l=43;
+
+int i=0,j=0;
 
 //count array to store values
 
-int count_array[10]={0};
+int count_digits[10]={0};
 
 //loop to count occurances
 
-for(k=0;k<4;k++)
+for(i=0;i<4;i++)
 
 {
 
-for(l=0;l<4;l++)
+for(j=0;j<4;j++)
 
 {
 
 //updating the count values
 
-count_array[array[k][l]] = count_array[array[k][l]] + 1 ;
+count_digits[array[i][j]] = count_digits[array[i][j]] + 1 ;
 
 }
 
@@ -30,15 +31,12 @@ count_array[array[k][l]] = count_array[array[k][l]] + 1 ;
 
 //printing the count values
 
-for(k=0;k<10;k++)
+for(i=0;i<10;i++)
 
 {
 
-cout<<k<<":"<<count_array[k]<<";";
+cout<<i<<":"<<count_digits[i]<<";";
+  
 }
-
-//end of function
-
+  
 }
-
-
