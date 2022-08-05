@@ -1,47 +1,96 @@
-#include <iostream>
+void count_numbers(int array[4][4])
 
-using namespace std;
+{
 
-int main() {
+int num[10] = {0};
 
-int m,n,i,j;
+for(int i=0; i<4; i++)
 
-cout<<"Enter number of rows and number of columns in the matrix"<<endl;
+{
 
-cin>>m>>n;
+for(int j=0; j<4; j++)
 
-int mat[m][n];
+{
 
-cout<<"Enter matrix elements between 0-9"<<endl;
+switch(array[i][j])
 
-for(i=0;i<m;i++){
+{
 
-for(j=0;j<n;j++){
+case 0:
 
-cin>>mat[i][j];
+num[0] += 1;
+
+break;
+
+case 1:
+
+num[1] += 1;
+
+break;
+
+case 2:
+
+num[2] += 1;
+
+break;
+
+case 3:
+
+num[3] += 1;
+
+break;
+
+case 4:
+
+num[4] += 1;
+
+break;
+
+case 5:
+
+num[5] += 1;
+
+break;
+
+case 6:
+
+num[6] += 1;
+
+break;
+
+case 7:
+
+num[7] += 1;
+
+break;
+
+case 8:
+
+num[8] += 1;
+
+break;
+
+case 9:
+
+num[9] += 1;
+
+break;
 
 }
 
 }
 
-int count[10]={0,0,0,0,0,0,0,0,0,0};
+}
 
-for(i=0;i<m;i++){
+for(int i=0; i<10; i++)
 
-for(j=0;j<n;j++){
+{
 
-count[mat[i][j]]++;
+cout << i << ":" << num[i] << ";";
 
 }
 
-}
-
-cout<<endl;
-
-for(i=0;i<10;i++){
-
-cout<<i<<":"<<count[i]<<";";
+cout << endl;
 
 }
 
-}
