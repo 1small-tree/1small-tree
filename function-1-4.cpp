@@ -7,8 +7,7 @@ class matrix
 {
 
 
-void print_scaled_matrix(int arr[3][3],int scale)
-
+void print_scaled(int array[3][3],int scale)
 {
 
 int i,j;
@@ -53,12 +52,9 @@ int main()
 
 {
 
-matrix obj;
-int scale=3; 
-
-int threebythree[3][3]={{0,1,2},{3,4,5},{6,7,8}};
-
-obj.print_scaled_matrix(threebythree,scale);
+int scale = 3 ;
+int threebythree[3][3] = {{0,1,2},{3,4,5},{6,7,8}} ;
+print_scaled(threebythree,scale) ;
 
 return 0;
 
