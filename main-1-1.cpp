@@ -1,8 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int sum_diagonal(int array[4][4]);
-    int array[4][4]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
-    cout<<sum_diagonal(array)<<"\n";
-    return 0;
+int main()
+{
+int *ptr, i;
+i = 11;  
+// /* address of i is assigned to ptr */
+ptr = &i;   
+// /* show the value of ptr */
+cout << "Value of ptr: "  << ptr << endl; 
+// /* show i's value using ptr variable */      
+cout << "Value of i: "  << *ptr << endl;
+*ptr = 100;
+    
+cout << "Value of i: "  << i << endl;
+return 0;
 }
