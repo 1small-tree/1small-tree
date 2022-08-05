@@ -1,13 +1,18 @@
+// header files
+
 #include<iostream>
 #include <string>
 #include<cstring>
 #include <cstdio>
+
+// define max value as 1000000
 #define max 1000000
 using namespace std;
 
-
+// function to find binary number
 
 void print_binary_str(std::string decimal_number)
+
 {
 
 // converting string into int number
