@@ -12,6 +12,7 @@ temp =temp/2;
 j = j * 10; 
 }
  printf("%d\n",result);
+}
 // int main(){ 
 // std::string decimal number="20.123";
 // print binary str(decimal number);
