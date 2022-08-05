@@ -1,6 +1,6 @@
 //function to count the number occurances
 
-void count_numbers(int array[4][4])
+void count_digits(int array[4][4])
 
 {
 
