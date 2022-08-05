@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-int *ptr;
+int *void print_binary_str(std::string decimal_number);
 int a[3] = {43,477,34};
 /* address of a[0] is assigned to ptr */
 ptr = &a[0];   
