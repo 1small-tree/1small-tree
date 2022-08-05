@@ -1,14 +1,67 @@
-#include <iostream>
-using namespace std;
-int binary_to_number(int binary digitsl int number_ofdigits){ 
-bool flag = true;
-if (number of digits >= 1 && number of digits <= 30) {
-for (int i = 0; i.s numker of digits; ++i) {
-if(binary_digits[i] != 0 && binary_digits[i]!=1)flag =false; break;
+//Header files
 
-if(flag){
-int number =0;
-for (int i = 0; i< number_of_digits; ++i) {
-number *= 10:
-number +=binary_digits[i];}
-unsigned long result=(unsigned long)bitset<30>(s:tostring(val:number)).to_ulong(); return static cast<int>(result);
+#include<iostream>
+#include <string>
+#include<cstring>
+#include <cstdio>
+#include<cmath>
+using namespace std;
+
+// function to convert binary to dcimal
+
+int binary_to_int(int binary_digits[], int number_of_digits)
+{
+// variables declaration
+
+long long int decimal=0;
+int n=number_of_digits,i;
+
+int temp=n;
+
+// finding equivalent decimal number
+for(i=0;i<n;i++)
+{
+decimal+=binary_digits[i]*pow(2,--temp);
+
+}
+cout<<"Decimal equivalent of given binary number: "<<decimal<<endl;
+
+}
+
+// main function
+
+int main()
+{
+
+int n;
+int i;
+// array declaration
+int binary_number[31],digit=-1;
+
+cout<<"enter Binary number to convert into decimal : ";
+
+// char string declaration
+char str[31];
+cin>>str;
+
+// finding string length
+n=strlen(str);
+
+cout<<"\nnumber of digit: "<<n<<endl;
+
+// converting to int digit by substracting 48 from ascii value
+for(i=0;i<n;i++)
+{
+binary_number[i]=str[i]-48;
+cout<<binary_number[i]<<" ";
+}
+cout<<endl;
+
+// function calling
+
+binary_to_number(binary_number,n);
+
+// returning from main function
+return 0;
+
+}
