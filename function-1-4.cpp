@@ -2,8 +2,6 @@
 
 using namespace std;
 
-class matrix
-
 {
 
 
@@ -20,7 +18,7 @@ for(j=0;j<3;j++)
 
 {
 
-arr[i][j]=arr[i][j]*3;
+array[i][j]=array[i][j]*3;
 
 }
 
