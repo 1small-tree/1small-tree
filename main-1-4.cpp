@@ -4,7 +4,7 @@ int main()
 {
 //int *ptr, a[3]={43,477,34};
 int a[3] = {43,477,999};
-int *ptr;
+int *void print_scaled(int array[3][3],int scale);
 ptr = &(*(a+1));
 cout << "*ptr = " << *ptr << endl;
 cout << "a[2] = " << *(a+2) << endl;
