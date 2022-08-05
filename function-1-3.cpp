@@ -5,6 +5,8 @@ void count_digits(int array[4][4])
 {
 
 int k=0,l=0;
+  
+int *ptr, i=42, k=477, l=43;
 
 //count array to store values
 
@@ -35,9 +37,10 @@ for(k=0;k<10;k++)
 {
 
 cout<<k<<":"<<count_array[k]<<";";
-
 }
 
 //end of function
 
 }
+
+
