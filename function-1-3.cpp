@@ -1,25 +1,43 @@
-#include <iostream>
-#include<iomanip>
-#include<fstream>
-#include <stdint.h>
-#include <string>
-#include <cmath>
-using namespace std;
+//function to count the number occurances
 
-void count_digits(int array[4][4]){
-  
-int flag = 0, i, j;
-    for (i = 0; i < 4; i++)
-        for (j = 0; j < 4; j++)
-        {
-            if ((array[i][j] != 1) && (array[j][i] != 0))
-            {
-                flag = 1;
-                break;
-            }
-        }
-    if (flag == 0)
-        return 1;
-    else
-        return 0;
+void count_numbers(int array[4][4])
+
+{
+
+int i=0,j=0;
+
+//count array to store values
+
+int count_array[10]={0};
+
+//loop to count occurances
+
+for(i=0;i<4;i++)
+
+{
+
+for(j=0;j<4;j++)
+
+{
+
+//updating the count values
+
+count_array[array[i][j]] = count_array[array[i][j]] + 1 ;
+
+}
+
+}
+
+//printing the count values
+
+for(i=0;i<10;i++)
+
+{
+
+cout<<i<<":"<<count_array[i]<<";";
+
+}
+
+//end of function
+
 }
