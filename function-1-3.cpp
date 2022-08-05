@@ -4,25 +4,25 @@ void count_digits(int array[4][4])
 
 {
 
-int i=0,j=0;
+int k=0,l=0;
 
 //count array to store values
 
-int count_array[10]={0};
+int count_array[4]={0};
 
 //loop to count occurances
 
-for(i=0;i<4;i++)
+for(k=0;k<4;k++)
 
 {
 
-for(j=0;j<4;j++)
+for(l=0;l<4;l++)
 
 {
 
 //updating the count values
 
-count_array[array[i][j]] = count_array[array[i][j]] + 1 ;
+count_array[array[k][l]] = count_array[array[k][l]] + 1 ;
 
 }
 
@@ -30,11 +30,11 @@ count_array[array[i][j]] = count_array[array[i][j]] + 1 ;
 
 //printing the count values
 
-for(i=0;i<10;i++)
+for(k=0;k<10;k++)
 
 {
 
-cout<<i<<":"<<count_array[i]<<";";
+cout<<k<<":"<<count_array[k]<<";";
 
 }
 
